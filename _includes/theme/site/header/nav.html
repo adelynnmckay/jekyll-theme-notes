@@ -1,0 +1,37 @@
+<nav>
+    <button class="menu-button">
+        {%- include theme/icons/menu.html -%}
+    </button>
+    <div class="hidden menu-container">
+        <ul>
+            <li>
+                <a href="{{ site.apex_domain_url }}">Main Site</a>
+            </li>
+            <li>
+                <a href="/">Main Page</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                {%- include plugins/github-new-page-button.html page_type="Note" -%}
+            </li>
+            <li>
+                {%- include plugins/github-edit-page-button.html page_type="Note" -%}
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="/notes-by-title">Notes by Title</a>
+            </li>
+            <li>
+                <a href="/notes-by-date">Notes by Date</a>
+            </li>
+            <li>
+                <a href="/notes-by-category">Notes by Category</a>
+            </li>
+            <li>
+                <a href="/notes-by-tag">Notes by Tag</a>
+            </li>
+        </ul>
+    </div>
+</nav>
