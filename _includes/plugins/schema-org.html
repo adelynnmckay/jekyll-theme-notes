@@ -10,7 +10,7 @@
 {%- assign schema_org_author = page.author | default: site.author | escape -%}
 {%- assign schema_org_date = page.date | date_to_xmlschema -%}
 {%- assign schema_org_description = page.excerpt | default: page.description | default: site.description | strip_html | strip_newlines | escape -%}
-{%- assign schema_org_featured_image = page.featured_image | default: site.featured_image | default: 'featured_image.png' | absolute_url -%}
+{%- assign schema_org_featured_image = page.featured_image | default: site.featured_image |  absolute_url -%}
 {%- assign schema_org_keywords = page.tags | default: page.keywords | default: site.keywords | default: '' | join: ',' -%}
 {%- assign schema_org_last_modified_at = page.last_modified_at | default: page.date | date_to_xmlschema -%}
 {%- assign schema_org_logo = site.logo | default: 'logo.png' | absolute_url -%}

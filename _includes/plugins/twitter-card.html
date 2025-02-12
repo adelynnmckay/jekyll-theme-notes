@@ -4,7 +4,7 @@
 {%- assign twitter_card = "summary_large_image" -%}
 {%- assign twitter_creator = site.twitter.username -%}
 {%- assign twitter_description = page.excerpt | default: page.description | default: site.description | strip_html | strip_newlines | escape -%}
-{%- assign twitter_image = page.featured_image | default: site.featured_image | default: '/assets/images/featured_image.png' | absolute_url -%}
+{%- assign twitter_image = page.featured_image | default: site.featured_image | absolute_url -%}
 {%- assign twitter_title = page.title | default: site.title | escape -%}
 {%- assign twitter_url = page.url | default: site.url | absolute_url -%}
 <meta name="twitter:card" content="{{ twitter_card }}">

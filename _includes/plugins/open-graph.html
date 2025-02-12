@@ -3,7 +3,7 @@
 {% assign og_type = page.url == "/" | ternary: "website", "article" -%}
 {%- assign og_author = page.author | default: site.author | escape -%}
 {%- assign og_description = page.excerpt | default: page.description | default: site.description | strip_html | strip_newlines | escape -%}
-{%- assign og_image = page.featured_image | default: site.featured_image | default: 'featured_image.png' | absolute_url -%}
+{%- assign og_image = page.featured_image | default: site.featured_image | absolute_url -%}
 {%- assign og_locale = site.locale | default: 'en_US' -%}
 {%- assign og_modified_time = page.last_modified_at | default: page.date | date_to_xmlschema -%}
 {%- assign og_published_time = page.date | date_to_xmlschema -%}

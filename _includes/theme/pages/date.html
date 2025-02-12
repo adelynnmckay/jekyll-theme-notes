@@ -7,7 +7,7 @@
 {%- assign year = current_date | date: "%Y" -%}
 {%- assign month = current_date | date: "%B" -%}
 {%- assign day = current_date | date: "%d" -%}
-<datetime datetime="{{ current_ | date_to_xmlschema }}">
+<datetime datetime="{{ current_date | date_to_xmlschema }}">
     <a class="lowlight-color" href="{{ dates_url }}#date-month-{{ yyyy_mm }}">{{ month }}</a>
     <a class="lowlight-color" href="{{ dates_url }}#date-day-{{ yyyy_mm_dd }}">{{ day }}</a>,
     <a class="lowlight-color" href="{{ dates_url }}#date-year-{{ yyyy }}">{{ year }}</a>

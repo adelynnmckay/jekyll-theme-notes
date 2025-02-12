@@ -1,4 +1,4 @@
-{%- query var="results" group_by="year,month,day" order_by="title" order="asc" -%}
+{%- query var="results" group_by="year,month,day" order_by="title" order="desc" -%}
 {%- for year_obj in results -%}
 {%- assign yyyy = year_obj.year.long_number -%}
 {%- assign id = "date-year-" | append: yyyy -%}
